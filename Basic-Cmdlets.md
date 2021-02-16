@@ -104,16 +104,35 @@
   ------   ----               -----------
   Running  Spooler            Print Spooler
   ```
+## network
+* ```Test-Connection``` -  instead of ping,traceroute,map
+ ```powershell
+ # like ping
+ Test-Connection -ComputerName tldp.org   
+ 
+ # just True or False
+ Test-Connection -ComputerName tldp.org -Quiet -Count 1 
+ 
+ # Use PowerShell to test that a port is open on a server
+ 
+ ```
 
 * `````` - 
-      ```powershell
-      ```
+  ```powershell
+  ```
+
+
 
 * `````` - 
-      ```powershell
-      ```
+  ```powershell
+  ```
+
 
 * `````` - 
-      ```powershell
-      ```
+  ```powershell
+  ```
+
+* `````` - 
+  ```powershell
+  ```
 
