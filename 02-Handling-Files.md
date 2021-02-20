@@ -1,5 +1,20 @@
 # Handling Files
 
+## creating/apnding text file
+### creating - will overwrite exsits file
+```powershell
+$text | Set-Content 'file.txt'
+$text | Out-File 'file.txt'
+$text > 'file.txt'
+```
+
+### Appending to a file (will create it if not exisits):
+```powershell
+$text | Add-Content 'file.txt'
+$text | Out-File 'file.txt' -Append
+$text >> 'file.txt'
+```
+
 ## Itrate over lines:
 This is one liner:
 ```powershell
@@ -16,6 +31,25 @@ ForEach ($line in  (Get-Content .\env.txt)){
 ```
 
 ## CSV files
+### ```Import-Csv``` /```Export-CSV```
+Converts from CSV file to an objects and an object to a CSV file
+```powershell
+
+```
+
+###
+Converts CSV file to an object
+```powershell
+$iris_obj=import-csv -Path .\iris.csv
+$iris_obj | Export-Csv -Path c:\tmp\iris-from-bjects.csv
+$iris_obj | select -First 1
+
+sepal.length : 5.1
+sepal.width  : 3.5
+petal.length : 1.4
+petal.width  : .2
+variety      : Setosa
+```
 
 ## Excle files
 
@@ -25,4 +59,5 @@ ForEach ($line in  (Get-Content .\env.txt)){
 
 ## XML files
 
+## yaml
 
