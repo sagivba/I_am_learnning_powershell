@@ -41,30 +41,7 @@
   variety      NoteProperty System.String variety=Setosa
   ```
 
-## Handling CSV files
-* ```Export-CSV``` - Converts object to a CSV file
-  ```powershell
-  $iris_obj |  Export-Csv -Path c:\tmp\iris-from-bjects.csv
-  ```
 
-* ```Import-Csv``` - Converts CSV file to an object
-  ```powershell
-  PS C:\tmp> $iris_obj=import-csv -Path .\iris.csv
-  PS C:\tmp> $iris_obj | select -First 2
-
-
-  sepal.length : 5.1
-  sepal.width  : 3.5
-  petal.length : 1.4
-  petal.width  : .2
-  variety      : Setosa
-
-  sepal.length : 4.9
-  sepal.width  : 3
-  petal.length : 1.4
-  petal.width  : .2
-  variety      : Setosa
-  ```
 # Converting data to HTML
 * ```ConvertTo-HTML``` - pipe the output from another command into this:
   ```powershell
