@@ -1,14 +1,24 @@
 # Handling Files
 
-## creating/apnding text file
-### creating - will overwrite exsits file
+## Read from a file and Create/Apend a text file
+```powershell
+$text = Get-Content
+
+```powershell
+
+### Creating a file - will overwrite exsits file
 ```powershell
 $text | Set-Content 'file.txt'
 $text | Out-File 'file.txt'
 $text > 'file.txt'
 ```
 
-### Appending to a file (will create it if not exisits):
+### Prevent an existing file from being overwritten
+```powershell
+$text | Out-File -FilePath file.txt -NoClobber
+```
+
+### Append to a file (will create it if not exisits):
 ```powershell
 $text | Add-Content 'file.txt'
 $text | Out-File 'file.txt' -Append
@@ -33,12 +43,6 @@ ForEach ($line in  (Get-Content .\env.txt)){
 ## CSV files
 ### ```Import-Csv``` /```Export-CSV```
 Converts from CSV file to an objects and an object to a CSV file
-```powershell
-
-```
-
-###
-Converts CSV file to an object
 ```powershell
 $iris_obj=import-csv -Path .\iris.csv
 $iris_obj | Export-Csv -Path c:\tmp\iris-from-bjects.csv
