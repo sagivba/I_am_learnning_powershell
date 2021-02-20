@@ -1,3 +1,6 @@
+```powershell
+```
+
 # I_am_learnning_powershell
 This repo is for learnning powershell
 
