@@ -16,4 +16,5 @@ This repo is for learnning powershell
 - data-structures in powershell?
 - sort and filter
 - main modules
+- log parsing
 
