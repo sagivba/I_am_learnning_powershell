@@ -3,10 +3,10 @@
 ## Read from a file and Create/Apend a text file
 ```powershell
 $text = Get-Content
+```
 
-```powershell
+### Create a file -  this will overwrite exsits file
 
-### Creating a file - will overwrite exsits file
 ```powershell
 $text | Set-Content 'file.txt'
 $text | Out-File 'file.txt'
