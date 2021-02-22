@@ -47,7 +47,12 @@ a.list
 ```
 
 ## substring
+String.Substring( StartIndex [, length] )
 ```powershell
+"Richard Feynman".substring(2)    #-> 'chard Feynman'
+"Richard Feynman".substring(2,2)  #-> 'ch'
+"Richard Feynman".substring(0,2)  #-> 'Ri'
+"Richard Feynman".substring(0,0)  #-> ''
 ```
 ## cut
 ```powershell
@@ -55,4 +60,11 @@ a.list
 ```
 
 ## trim
-
+String.trim([char])
+String.trimstart/trimend([char])
+```powershell
+"trim example ".trim()        #-> 'trim example'
+" trim example ".trimstart()  #-> 'trim example '
+" trim example ".trimend()    #-> ' trim example'
+"trim example!!!".trim('!')   #-> 'trim example'
+```
