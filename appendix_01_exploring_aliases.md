@@ -19,11 +19,8 @@ Get-Command -Noun 'Serv*'
 ## exploring aliases
 ### which aliases exists for `Get-Service` and `Start-Service` 
 ```powershell
-PS C:\Users\sagivba> gal -Definition  Get-Service
-
-CommandType     Name                                               Version    Source
------------     ----                                               -------    ------
-Alias           gsv -> Get-Service
+gal -Definition  Get-Service
+gal -Definition  *service
 ```
 ### Now late find related aliases
 ```powershell 
