@@ -5,6 +5,7 @@
 - Example 3: `get-help Get-NetIPAddress -Full` - comprehensive  review of cmdlet usage, *including examples!*
 - Example 4: `get-help Get-NetIPAddress -Examples` - only show examples
 - Example 5: `get-help Get-NetIPAddress -Online` - Read the online help in your browser
+- Example 6: `get-help Get-NetIPAddress -ShowWindow` - Read the help in a window - use settings to explore the help.
 
 
 
