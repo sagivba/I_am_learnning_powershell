@@ -1,15 +1,3 @@
-## Help and info and aliases
-* ```Get-Command``` - Brings up all the commands available for use in your current session.
-* ```Get-Help``` - provides quick access to the information you need to run and work with all of the available commands.
-  ```powershell
-  Get-Help Format-Table
-  Get-Help -Name Format-Table
-  Format-Table -?
-      
-  Get-Help Format-Table -Detailed
-  Get-Help Format-Table -Full
-  ```
-* ```Get-Alias``` - list all aliases.  
 
 ## Read files, head,tail...  
 * ```Get-Content``` - read a text file (alias ```gc``` )
