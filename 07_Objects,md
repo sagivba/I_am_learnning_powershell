@@ -23,6 +23,9 @@ Gets the properties and methods
 
 ```powershell
 Get-Process chrom* | select-object -Property id,name,cpu | where -Property cpu -gt 1000 | sort -Property cpu
+or
+ps chrom* | select -Property id,name,cpu | where {$_.cpu -gt 1000} | sort {$_.cpu}
+
 
    Id Name           CPU
    -- ----           ---
@@ -36,7 +39,7 @@ Get-Process chrom* | select-object -Property id,name,cpu | where -Property cpu -
 ```powershell
  Get-Process note* | select-object -Property id,name | sort -Property name 
  or 
- ps note* | select -Property id,name | sort -Property name 
+ ps note* | select -Property id,name |  sort {$_.name}  
 
    Id Name
    -- ----
