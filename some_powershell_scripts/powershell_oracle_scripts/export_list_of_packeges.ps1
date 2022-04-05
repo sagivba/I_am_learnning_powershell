@@ -52,7 +52,7 @@ $date_str=$date.ToString("yyyy-MM-dd")
 
 $pkg_lst = Get-IncludeList ".\pckges_list.txt"
 
-Get-ExportCmd "OP" "123" "oratestc" "$pkg_lst" "DATA_EXP_DIR"  $date_str| echo
-Get-ImportCmd "OP" "123" "oratestc" "01-list.sql"  "DATA_EXP_DIR" $date_str | echo
+Get-ExportCmd "DB_USER" "123" "oracletest" "$pkg_lst" "DATA_EXP_DIR"  $date_str| echo
+Get-ImportCmd "DB_USER" "123" "oracletest" "01-list.sql"  "DATA_EXP_DIR" $date_str | echo
 
 
