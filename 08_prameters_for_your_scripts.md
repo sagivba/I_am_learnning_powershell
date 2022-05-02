@@ -39,3 +39,12 @@ The username is someone
 The True/False switch argument is True
 ```
 
+## Using parameter attributes:
+
+
+```powershell
+param (
+    [Parameter(Mandatory = $true, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)] 
+    [string]$dir 
+)
+```
